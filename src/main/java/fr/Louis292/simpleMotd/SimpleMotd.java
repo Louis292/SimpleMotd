@@ -1,5 +1,6 @@
 package fr.Louis292.simpleMotd;
 
+import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -25,6 +26,8 @@ public final class SimpleMotd extends JavaPlugin implements Listener {
         config = getConfig();
 
         MOTD = config.getString("server_motd");
+
+        MOTD = ChatColor.translateAlternateColorCodes('&', MOTD);
 
         MAX_SLOT_ACTIVE = config.getBoolean("max_slot.active");
         MAX_SLOT = config.getInt("max_slot.value");
