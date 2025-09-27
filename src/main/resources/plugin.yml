@@ -1,0 +1,4 @@
+name: SimpleMotd
+version: '1.0'
+main: fr.Louis292.simpleMotd.SimpleMotd
+author: Louis_292

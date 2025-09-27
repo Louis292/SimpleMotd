@@ -1,0 +1,10 @@
+# Simple Motd plugin created by Louis_292
+# This is the config file
+
+# the server motd
+server_motd: "&eWelcome to the server\n&aExemple !"
+
+# server max slot
+max_slot:
+  active: true
+  value: 50
